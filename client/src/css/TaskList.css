@@ -1,0 +1,140 @@
+/*CARDS*/
+
+  .cards-title{
+    background-color: #262626;
+    margin-top: 30px;
+    color: #f7f7f7;
+    padding: 20px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color: #262626;
+    padding: 20px;
+  }
+
+  .cards h1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    color: #f7f7f7;
+    display: block;
+    text-align: center;
+  
+  }
+  
+  .cards div {
+    width: 90%;
+    margin: 10px;
+    text-align: justify;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .cards div span.options {
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+  }
+  
+  .cards div span.options i {
+    padding: 5px;
+    cursor: pointer;
+    transition: ease-out 0.2s;
+  }
+  
+  .cards div span.options i:hover {
+    font-size: 22px;
+    cursor: pointer;
+    transition: ease-in 0.2s;
+  }
+  
+  .cards div h3 {
+    margin-bottom: 10px;
+  }
+
+  .modal{
+    width: 500px;
+    background-color: #f7f7f7;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -250px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: none;
+  }
+  
+  .header-modal{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+   .body-modal{
+    margin: 25px 50px;
+  }
+  .body-modal div{
+   padding: 10px 0;
+  }
+
+  .body-modal div input{
+    border: 1px solid #262626;
+    border-radius: 4px;
+    margin: 0 10px;
+    padding: 4px
+  }
+
+  .body-modal button{
+    border: 1px solid #262626;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 7px;
+    margin-top: 10px;
+    color:#f7f7f7;
+    background-color: #47535f;
+    transition: ease-in-out 0.2s;
+  }
+
+  .body-modal button:hover{
+    background-color: #707c8a;
+  }
+
+  .close-option{
+    padding: 5px;
+    cursor: pointer;
+    transition: ease-out 0.2s;
+  }
+
+  .close-option:hover{
+    font-size: 20px;
+    cursor: pointer;
+    transition: ease-in 0.2s;
+  }
+
+  .active-modal{
+    transition: ease-in-out 0.5s;
+    display: block;
+  }
+
+  @media screen and (max-width: 900px) {
+    .cards{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+    .cards{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    .cards{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }

@@ -1,0 +1,44 @@
+/* .container{
+    display: inline-block;
+    position: relative;
+    left: 30%;
+    border:2px solid black;
+}
+
+@media (min-width: 600px) {
+    .container{
+        border:2px solid black;
+    }
+  } */
+
+  .create-form{
+      margin: 30px auto;
+      background-color: #262626;
+      padding: 20px;
+      color:#f7f7f7;
+      width: 50%;
+  }
+
+  .create-form form div{
+      margin: 15px;
+      text-align: center;
+      
+  }
+
+  form div input{
+    border: 1px solid #262626;
+    border-radius: 4px;
+    margin: 0 10px;
+    padding: 4px
+  }
+
+  form button{
+    border: 1px solid #262626;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 7px;
+    margin-top: 10px;
+    color:#f7f7f7;
+    background-color: #47535f;
+    transition: ease-in-out 0.2s;
+  }
